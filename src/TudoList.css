@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body {
+    background: pink;
+    font-family: 'Roboto Flex', sans-serif;
+}
+h1 {
+    font-weight: 900;
+    color: red;
+    text-align: center;
+}
+form {
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 60px;
+    margin: 30px auto;
+    margin-bottom: 60px;
+}
+input[type="text"] {
+    display: flex;
+    padding-left: 30px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: greenyellow;
+    width: 100%;
+    height: 60px;
+    background: navy;
+}
+*input[type="text"]:focus {
+    outline: red solid 2px;
+}
+
+button.add{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #363b65;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    height: 61px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button.add:hover {
+    color: white;
+    background: #4a4f7c;
+}
+
+.Lista.Tarefas{
+    
+    justify-content: center;
+    flex-grow: column wrap;
+    width: 600px;
+    margin: 0 auto;
+    
+    
+}
+
+.Item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.Item:hover {
+    background: #151627;
+}  
+
+.Item span {
+    
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: black;
+    width: 100%;
+}
+
+.Item.completo{
+     
+    justify-content: space-between;
+    background: #1e1f2e;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.Item.completo span {
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: gold;
+    width: 100%;
+    text-decoration-line: line-through;
+    
+}
+
+button.del{
+    background: #4d506e;
+    padding: 15px;
+    cursor: pointer;
+}                                                                                           
+button.del:hover{
+    background: red;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}  
+
+button.deleteAll{
+    border: 1px solid red;
+    background: none;
+    padding: 15px;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button.deleteAll:hover{
+    border: 1px solid red;
+    background: red;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    form {
+        width: 100%;
+    }
+    .Lista.Lista.Tarefas {
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    
+}
